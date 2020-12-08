@@ -1,18 +1,6 @@
 
 
-// WHEN I enter my project title
-// THEN this is displayed as the title of the README
-
-
-// WHEN I enter a description, 
-// installation instructions, 
-// usage information, 
-// contribution guidelines, 
-// and test instructions
-
-
 // WHEN I choose a license for my application from a list of options
-
 
 // THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
 
@@ -40,7 +28,7 @@ inquirer
     {
       type: 'input',
       message: 'What is your project title?',
-      name: 'projectTitle',
+      name: 'title',
     },
     {
       type: 'input',
@@ -76,12 +64,12 @@ inquirer
     {
         type: 'input',
         message: 'Please Enter your contact E-mail',
-        name: 'e-mail',
+        name: 'email',
     },
   ])
   .then((data) => {
 
-    fs.writeFileSync('README.md', JSON.stringify(data, null, '\t'), (err) =>
+    fs.writeFileSync('README.md', JSON.stringify(data, null, '\n'), (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   });
