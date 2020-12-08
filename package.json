@@ -1,0 +1,23 @@
+{
+  "name": "MakeReadme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alwaysjaden/MakeReadme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alwaysjaden/MakeReadme/issues"
+  },
+  "homepage": "https://github.com/alwaysjaden/MakeReadme#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
